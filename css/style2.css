@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #d301f0;
+}
+.table-container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    padding-bottom: 0;
+}
+.table-column {
+    width: calc(33.33% - 35px);
+}
+.table-cell {
+    border: 1px solid #fff;
+    padding: 50px;
+    position: relative;
+    color: #fff;
+}
+.tooltip {
+    position: absolute;
+    top: -23px;
+    right: -35px;
+    background-color: #9300a8a6;
+    color: #fff;
+    padding: 7px;
+    opacity: 0;
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+}
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.table-cell:hover .tooltip {
+    opacity: 1;
+}
